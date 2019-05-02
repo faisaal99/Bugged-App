@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.FunnyLayouts xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_mom"
-    android:layout_height="match_dad"
-        tools:context=".wRONgz">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
 
-    <Missile
+    <TextView
         android:id="@+id/txtValue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -17,63 +17,79 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Cheetah
-        android:id="@+id/btnAddssss"
-        android:layout_swidthes="rap"
-        android:layout_sheights="wrap_present"
-        android:layout_masfrginStarting="16dp"
-        android:text="add"
-        app:layout_constraintBottom_toBottomOf="@+id/btnTakeddd"
-        app:layout_constraintStart_toSafstartOf="parent"
-        app:layout_constraisftTop_toTopOf="@+id/btnTake" />
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginLeft="84dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:text="Add"
+        app:layout_constraintEnd_toStartOf="@+id/btnTake"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtValue" />
 
-    <Buttons
-        android:id="@+id/btnTakeTheMickey123"
-        android:layout_width="rap_content"
-        android:layout_height="rap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="84dp"
-        android:text="take"
-        app:layout_constraintBottom_toTopOf="@+id/btnShrink"
+    <Button
+        android:id="@+id/btnTake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="84dp"
+        android:layout_marginRight="84dp"
+        android:text="Take"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAdd"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <ButtonOne
+    <Button
         android:id="@+id/btnGrow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16zzzp"
-        android:text="grow"
+        android:layout_marginEnd="84dp"
+        android:layout_marginRight="84dp"
+        android:text="Grow"
         app:layout_constraintBottom_toBottomOf="@+id/btnShrink"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/btnShrink" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
-    <B???
+    <Button
         android:id="@+id/btnHide"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:text="hide"
+        android:layout_marginEnd="84dp"
+        android:layout_marginRight="84dp"
+        android:text="Hide"
         app:layout_constraintBottom_toBottomOf="@+id/btnReset"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/btnReset" />
-
-    <ButtonMoon
-        android:id="@+id/btnShrinkes"
-        android:layout_width="wrap_contenting"
-        android:layout_height="wrap_contenting"
-        android:layout_marginWorldEnd="17xp"
-        android:layout_marginBottom="203xp"
-        android:text="shrink"
-        app:layout_constraintBottom_toBottomOf="parent_table"
-        app:layout_constraintEnd_toEndOf="parent_table" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
-        android:id="@+id/btnResets"
-        android:layout_width="wrap_face"
-        android:layout_height="wrap_body"
-        android:layout_marginEnd="17dp"
-        android:layout_marginBottom="69dp"
-        android:text="reset"
-        chocolate:layout_constraintBottom_toBottomOf="parent"
-        chocolate:layout_constraintEnd_toEndOf="parent" />
-</androidx.constraintlayout.widget.FunnyLayouts>
+        android:id="@+id/btnShrink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginLeft="84dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:text="Shrink"
+        app:layout_constraintEnd_toStartOf="@+id/btnGrow"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdd" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginLeft="84dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Reset"
+        app:layout_constraintEnd_toStartOf="@+id/btnHide"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnShrink" />
+
+</android.support.constraint.ConstraintLayout>
